@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div id="intro">
+        <div class="spinner"></div>
+        <h2 class="loading-text">Loading...</h2>
+    </div>
+
+    <!-- ------------------Home-------------------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="name-arjun">Arjun</span><span class="name-kumar"> .</span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#coding-platform">Platforms</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <a href="images/my-cv.pdf" download="Arjun-Kumar-CV" class="download-btn">
+                        Download CV
+                    </a>
+
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div>
+                    <div id="dynamic-text">
+                        <span style="visibility: hidden; position: absolute;">Software Developer</span>
+                        <span class="typewriter"></span>
+                    </div>
+                    <h1>Hi, I'm <span>Arjun</span></h1>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/arjun-uit/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/arjun-uu" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/917209016350" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Arjun1.png" alt="Arjun Kumar" loading="lazy">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Arjun Kumar, an aspiring software developer and a B.Tech CSE student at Uttaranchal
+                        University. Passionate about Data Structures and Algorithms, I have a keen interest in web
+                        development and software engineering. I have worked on various projects, including responsive
+                        websites, dynamic UI development with React, and full-stack applications.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>C++, Python, JavaScript, SQL</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, React, Node.js, MongoDB</li>
+                            <li><span>Software Development</span><br>Building scalable applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Present</span><br>Working on a chatbot using React Native</li>
+                            <li><span>2023 - 2024</span><br>Developed multiple web applications using React and Node.js
+                            </li>
+                            <li><span>2022 - 2023</span><br>Created a responsive portfolio website</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2026</span><br>B.Tech in Computer Science Engineering, Uttaranchal University</li>
+                            <li><span>2021</span><br>12th - Gulab Memorial College (85.2%)</li>
+                            <li><span>2019</span><br>10th - Delhi Public School (86.6%)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------Coding Platforms---------------------- -->
+    <section id="coding-platform">
+        <div class="container">
+            <h1>My Coding Platforms</h1>
+
+            <div class="platform-grid">
+
+                <!-- LeetCode Card -->
+                <div class="platform-card">
+                    <div class="card-header">
+                        <img src="images/leetcode.jpg" alt="LeetCode Logo" class="platform-logo" loading="lazy">
+                        <div class="platform-info">
+                            <h3>LeetCode</h3>
+                            <p class="username">@arjun_uit</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="details">💡 Solved <strong>430+</strong> coding problems and improving daily!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://leetcode.com/arjun_uit" class="view-profile" target="_blank">
+                            Visit LeetCode Profile <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GeeksForGeeks Card -->
+                <div class="platform-card">
+                    <div class="card-header">
+                        <img src="images/gfg.jpg" alt="GeeksForGeeks Logo" class="platform-logo" loading="lazy">
+                        <div class="platform-info">
+                            <h3>GeeksForGeeks</h3>
+                            <p class="username">@arjun_uit</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="details">🧩 Practiced <strong>180+</strong> problems covering core DSA topics.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.geeksforgeeks.org/user/arjun_uit" class="view-profile" target="_blank">
+                            Visit GFG Profile <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LinkedIn Card -->
+                <div class="platform-card">
+                    <div class="card-header">
+                        <img src="images/linkedin.png" alt="LinkedIn Logo" class="platform-logo" loading="lazy">
+                        <div class="platform-info">
+                            <h3>LinkedIn</h3>
+                            <p class="username">@arjun-uit</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="details">🤝 Connected with <strong>250+</strong> professionals and peers.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.linkedin.com/in/arjun-uit" class="view-profile" target="_blank">
+                            View LinkedIn <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GitHub Card -->
+                <div class="platform-card">
+                    <div class="card-header">
+                        <img src="images/github.png" alt="GitHub Logo" class="platform-logo" loading="lazy">
+                        <div class="platform-info">
+                            <h3>GitHub</h3>
+                            <p class="username">@arjun-uu</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="details">📂 Hosting <strong>25+</strong> repositories showcasing my projects.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/arjun-uu" class="view-profile" target="_blank">
+                            Explore GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <img src="images/work-1.png" alt="Portfolio Website" loading="lazy" />
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive personal portfolio with animations, interactive sections, coding profiles,
+                            projects, skills, and contact form.</p>
+                        <a href="https://arjun-uu.github.io/My-Portfolio/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/work-2.png" alt="Netflix Clone" loading="lazy" />
+                    <div class="project-info">
+                        <h3>EduPortal</h3>
+                        <p>React university site showcasing programs, campus life, testimonials, and contact features.
+                        </p>
+                        <a href="https://edu-portal-chi.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/work-3.png" alt="Weather App" loading="lazy" />
+                    <div class="project-info">
+                        <h3>Real Estate</h3>
+                        <p>React-based real estate site with property listings, testimonials, contact form, and
+                            responsive design.</p>
+                        <a href="https://estate-rose-ten.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/arjun-uu" target="_blank" class="btn">
+                See More <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title center">Contact Me</h1>
+
+            <div class="contact-wrapper">
+                <!-- Left Section -->
+                <div class="contact-left">
+                    <div class="contact-info">
+                        <p><i class="fas fa-paper-plane"></i> arjunadps662@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> +91 7209016350</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Dehradun, Uttarakhand, India</p>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/arjun-uit/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/arjun-uu" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/917209016350" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+
+                    <a href="images/my-cv.pdf" download class="btn btn2" target="_blank">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+
+                <!-- Right Section -->
+                <div class="contact-right">
+                    <form id="form">
+                        <div class="form-group">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn2">Submit ▶</button>
+                        <span id="msg"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------footer-section-------------------- -->
+    <div class="copyright">
+        <p>Copyright © Arjun. 2024</p>
+    </div>
+    </div>
+    <!------------------------javascript----------------------------->
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
